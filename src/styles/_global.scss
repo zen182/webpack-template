@@ -1,20 +1,139 @@
-$primaryColor: darkcyan;
-$secondaryColor: darkslategray;
+// $primaryColor: darkcyan;
+// $secondaryColor: darkslategray;
 
-html {
-  font-family: generalFont;
+// html {
+//   font-family: generalFont;
+// }
+
+// h1  {
+//   color: $primaryColor;
+// }
+// .container{
+//   &__subtitle {
+//     color: $secondaryColor;
+//     display: block;
+//     height: 140px;
+//     background: url("../images/webpack.png");
+//     display: flex;
+//     justify-content: center;
+//   }
+// }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1  {
-  color: $primaryColor;
+header,
+main,
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
 }
-.container{
-  &__subtitle {
-    color: $secondaryColor;
-    display: block;
-    height: 140px;
-    background: url("../images/webpack.png");
-    display: flex;
-    justify-content: center;
-  }
+
+header {
+  background-color: #FB3F5C;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+}
+
+.header-logo {
+  padding: 25px 0;
+}
+
+.header-menu {
+  display: grid;
+  grid-template-columns: repeat(5,auto);
+  align-items: center;
+}
+
+.header-menu a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #F8EEEF;
+  text-decoration: none;
+  position: relative;
+}
+
+.active {
+  position: relative;
+}
+
+.header-menu a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  display: block;
+  width: 24px;
+  height: 6px;
+  background-color: #F8EEEF;
+  border-radius: 55px;
+}
+
+.header-menu a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  display: block;
+  width: 24px;
+  height: 6px;
+  background-color: #F8EEEF;
+  border-radius: 55px;
+}
+
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+.grid-section {
+  padding: 175px 0 240px 0;
+}
+
+.latest-work-block {
+  padding: 0 55px;
+}
+
+.latest-work-block h4 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 42px;
+  text-align: center;
+  color: #191018;
+  margin-bottom: 45px;
+}
+
+.latest-work-cards-list {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 45px;
+  grid-template-rows: auto;
+  grid-row-gap: 45px;
+}
+
+.latest-work-card {
+
+}
+
+.card-imb-block {
+  width: 100%;
+}
+
+.latest-work-card h6 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #2D2D2D;
+}
+
+.latest-work-card p {
+  font-size: 17px;
+  line-height: 27px;
+  color: #2D2D2D;
 }

@@ -2,11 +2,59 @@ include pug/libs/_libs
 
 doctype html
 html(lang='en')
-    include pug/_head
+    //- include pug/_head
     body
-        .container
-            h1 Hello from Webpack
-            h2.container__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ipsam!
-            +image('angular')
-            +image('webpack')
-            .block
+        //- .container
+        //-     h1 Hello from Webpack
+        //-     h2.container__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ipsam!
+        //-     +image('angular')
+        //-     +image('webpack')
+        //-     .block
+        //-     .user
+        header 
+            .container
+                .header
+                    .header-logo
+                        img(src="./images/logo.png", alt="Logo")
+                    .header-menu
+                        a.active(href="") Home
+                        a(href="") About
+                        a(href="") Latest Works
+                        a(href="") Testimonials
+                        a(href="") Contact
+        main 
+            section.grid-section
+                .container
+                    .latest-work-block
+                        h4 Latest work
+                        .latest-work-cards-list
+                            .latest-work-card
+                                .card-imb-block
+                                    img(src="./images/1.png", alt="First")
+                                h6 Project title
+                                p UI, Art drection
+                            .latest-work-card
+                                .card-imb-block
+                                    img(src="./images/2.png", alt="Second")
+                                h6 Project title
+                                p UI, Art drection
+                            .latest-work-card
+                                .card-imb-block
+                                    img(src="./images/3.png", alt="Third")
+                                h6 Project title
+                                p UI, Art drection
+                            .latest-work-card
+                                .card-imb-block
+                                    img(src="./images/4.png", alt="Fourth")
+                                h6 Project title
+                                p UI, Art drection
+                            .latest-work-card
+                                .card-imb-block
+                                    img(src="./images/5.png", alt="Fifth")
+                                h6 Project title
+                                p UI, Art drection
+                            .latest-work-card
+                                .card-imb-block
+                                    img(src="./images/6.png", alt="Sixth")
+                                h6 Project title
+                                p UI, Art drection
