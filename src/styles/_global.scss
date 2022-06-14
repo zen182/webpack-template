@@ -81,9 +81,11 @@ header {
   margin: 0 auto;
 }
 
+// Home
 .home {
   background: url("../images/triangle.png") no-repeat right;
   background-size: contain;
+  margin-bottom: 220px;
 }
 
 .home-block {
@@ -136,6 +138,59 @@ header {
   margin: auto;
 }
 
+// About Us
+.about-us-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-us-block-img {
+  img {
+    width: 360px;
+  }
+}
+
+.about-us-block-text {
+  h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    text-transform: capitalize;
+    color: #191018;
+    max-width: 520px;
+    margin-bottom: 15px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.06em;
+    text-transform: lowercase;
+    color: #191018;
+    margin-bottom: 48px;
+  }
+  .button {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #F8EEEF;
+    padding: 19px 57px;
+    background: #FB3F5C;
+    border-radius: 18px;
+    text-decoration: none;
+    margin-right: 28px;
+  }
+  .button:last-child{
+    margin-right: 0;
+  }
+  .button.white {
+    background: #FFFFFF;
+    color: #FB3F5C;
+    border: 1px solid #FB3F5C;
+  }
+}
+
+// Latest work
 .grid-section {
   padding: 175px 0 240px 0;
 }

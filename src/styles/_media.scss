@@ -14,10 +14,14 @@
     }
   }
   
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
+    .header-menu {
+      display: none;
+    }
+
     .home {
       background-position: top;
-      background-size: 50%;
+      background-size: 550px;
     }
   
     .home-block {
@@ -36,15 +40,43 @@
       margin: 45px auto;
     }
   
-    .header-menu {
-      display: none;
+    .about-us-block {
+      grid-template-columns: 1fr;
+    }
+
+    .about-us-block-img {
+      margin: auto;
+      margin-bottom: 45px;
+    }
+
+    .about-us-block-text {
+      max-width: 500px;
+      margin: auto;
     }
   }
   
   @media (max-width: 768px) {
+    .home {
+      background-size: 310px;
+    }
+
     .home-block-img {
       img {
         height: 300px;
+      }
+    }
+
+    .about-us-block {
+      .buttons {
+        display: inline-grid;
+        grid-gap: 20px;
+        margin: auto;
+      }
+    }
+
+    .about-us-block-img {
+      img {
+        width: 280px;
       }
     }
   
